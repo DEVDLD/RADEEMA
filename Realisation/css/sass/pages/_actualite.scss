@@ -1,0 +1,30 @@
+.aside-left{
+    ol{
+        li{
+            transition: box-shadow .2s ease-in-out;
+            a{
+                img{
+                    height: 200px;
+                }
+            }
+
+            &:hover{
+                box-shadow: 2px 3px 20px 0px #cccccc;
+                i{
+                    color: $mainColor !important;
+                }
+            }
+        }
+    }
+}
+.actualiteImg:not(.text-center){
+    width: 50% ;
+    @media(max-width:767px){
+        width: 100% ;
+        border-bottom: 1px solid $mainColor !important;
+        margin-bottom: 1rem;
+    }
+}
+.page-link {
+    padding: .3rem .6rem !important;
+}

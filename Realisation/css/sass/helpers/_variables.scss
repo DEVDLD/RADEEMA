@@ -1,0 +1,17 @@
+//Media Queries
+$maxMobile:767px;
+$minSmall:768px;
+$minMedium:992px;
+
+//Colors
+$mainColor:#0078BD;
+$secondColor : #f5b313;
+$bleuDropDown : #00ACFF;
+$gris : #f8f8f8;
+
+//Font 
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Almarai&display=swap');
+body{
+    font-family: 'Cairo', sans-serif !important;//Almarai
+}

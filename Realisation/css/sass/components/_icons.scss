@@ -1,0 +1,58 @@
+
+.iconLink{
+    overflow: hidden;
+    &:hover{
+        //background-color: #eee;
+        /*box-shadow: 2px 1px 10px 0px #bbb;*/
+        box-shadow: inset -30px -20px 70px -30px #bbbbbb;
+        //box-shadow:  10px 10px 78px 0px #ccc;
+        &::after{
+            color: $mainColor;
+            animation: moveLeftRight 0.5s linear infinite;
+        }
+    }
+    &::after{
+    content: '\f101';
+    font-family: "FontAwesome";
+    font-size: 28px;
+    color: $secondColor;
+    margin-left: 10px;
+    padding: 0;
+    vertical-align: middle;
+    @include KeyFrame(moveLeftRight) {
+        0% {
+            margin-left: 15px;
+          }
+          50% {
+            margin-left: 10px;
+          }
+          100% {
+            margin-left: 15px;
+          }
+        }
+    }
+}
+.menuDeroulant{display: none;}
+
+#btnAfficherRelation{
+    outline: none;
+    background: transparent;
+    line-height: 2;
+    i{
+      color: $secondColor;
+      font-size: 28px;
+      vertical-align: sub;
+    }
+    &:hover{
+      box-shadow: inset -30px -20px 70px -30px #bbbbbb;
+      i{
+          color: $mainColor;
+      }
+  }
+}
+.lien{
+  transition: color .2s ease-out;
+  &:hover{
+    color: $secondColor !important;
+  }
+}

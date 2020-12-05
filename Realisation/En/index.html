@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La RADEEMA ( régie autonome de distribution d'eau et d'électricité ) a su confirmer son positionnement comme entreprise citoyenne grâce à une dynamique volontariste te de développement articulée autour des bonnes pratiques de gouvernance répondant à la charte nationale des bonnes pratiques des entreprise et établissements publics marocains. En effet, la RADEEMA est prise comme pilote pour la mise en œuvre de ladite charte.">
+    <meta name="keywords" content="RADEEMA,Eau Portable,Distribution Eau,Distribution Electricité,Facture,Assainissement Liquide">
+    <title>RADEEMA</title>
+    <link href="../images/logo512.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/vendors/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/vendors/bootstrap.min.css">
+    <link href='../css/vendors/core/main.min.css' rel='stylesheet' />
+    <link href='../css/vendors/daygrid/main.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="../css/vendors/leaflet/leaflet.css" />
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <!--topnav-->
+        <div class="topnav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <ul class="list-unstyled d-flex m-0 pt-2">
+                            <li class="ml-4"><a href="../Fr/index.html" title="francais">francais</a></li>
+                            <li class="ml-4"><a href="index.html" title="anglais">anglais</a></li>
+                            <li class="ml-4"><a href="../Ar/index.html" title="العربية">العربية</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <ul class="list-unstyled d-flex m-0 pt-2 justify-content-center">
+                            <li><a href="https://fr-fr.facebook.com/RADEEMAKECH/" title="Facebook" target="_blank"><i
+                                        class="fa fa-facebook h4 ml-4" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/radeemakech" title="Twitter" target="_blank"><i
+                                        class="fa fa-twitter h4 ml-4" aria-hidden="true"></i></a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=ma.radeema.redaelouafi.RadeemaMob"
+                                    title="Android app" target="_blank"><i class="fa fa-android h4 ml-4"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCFl5dUovd_Wr1AT0aprFAJA" title="Youtube"
+                                    target="_blank"><i class="fa fa-youtube h4 ml-4" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-12 text-right mt-2 mb-2">
+                        <button><i class="fa fa-search" aria-hidden="true"></i></button><input type="text" class=""
+                            size="17" placeholder=" Search ..">
+                    </div>
+                </div>
+            </div>
+        </div><!-- ./topnav-->
+
+        <!-- bottomnav -->
+        <div class="bottomnav">
+            <nav class="navbar navbar-expand-lg navbar-light text-light pt-0 pb-0">
+                <div class="container">
+                    <a class="navbar-brand mr-0" href="index.html"><img src="../images/logo512.png" class="imgLogo"
+                            alt="logo RADEEMA" title="RADEEMA">
+                    </a>
+                    <a class="navbar-brand logo ml-1" href="index.html" title="Home page">RADEEMA</a>
+                    <button class="navbar-toggler bg-light " type="button" data-toggle="collapse"
+                        data-target="#navContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse pl-4" id="navContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown mr-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="drpAbout" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="About us">
+                                    About us</a>
+                                <div class="dropdown-menu" aria-labelledby="drpAbout">
+                                    <a class="dropdown-item vendre" href="About/mot_directeur.html"
+                                        title="Word from the Director">Word from the Director</a>
+                                    <a class="dropdown-item vendre" href="About/nos_valeurs.html" title="Our values">Our
+                                        values</a>
+                                    <a class="dropdown-item vendre" href="About/engagement_societal.html"
+                                        title="Societal commitment">Societal commitment</a>
+                                    <a class="dropdown-item vendre" href="About/demarche_qse.html"
+                                        title="QSE approach">QSE approach</a>
+                                    <a class="dropdown-item vendre" href="About/espace_presse.html"
+                                        title="Press area">Press area</a>
+                                    <a class="dropdown-item vendre" href="About/projets_mobilisateurs.html"
+                                        title="Mobilizing projects">Mobilizing projects</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item vendre" href="About/histoire.html"
+                                        title="History">History</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown mr-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="drpMetier" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Our jobs">
+                                    Our jobs</a>
+                                <div class="dropdown-menu" aria-labelledby="drpMetier">
+                                    <a class="dropdown-item" href="Metiers/eau_portable.html"
+                                        title="Drinking water">Drinking water</a>
+                                    <a class="dropdown-item" href="Metiers/electricite.html"
+                                        title="Electricity">Electricity</a>
+                                    <a class="dropdown-item" href="Metiers/assainissement_liquide.html"
+                                        title="Liquid sanitation">Liquid sanitation</a>
+                                    <a class="dropdown-item" href="Metiers/developpement_commercial.html"
+                                        title="Business development">Business development</a>
+                                    <a class="dropdown-item" href="Metiers/step.html" title="STEP">STEP</a>
+                                </div>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link " data-toggle="tooltip" data-placement="bottom" title="News"
+                                    href="Actualités/actualite.html">News</a>
+                            </li>
+                            <li class="nav-item dropdown mr-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="drpPublication" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    title="Publications">
+                                    Publications</a>
+                                <div class="dropdown-menu " aria-labelledby="drpPublication">
+                                    <a class="dropdown-item vendre" href="Publications/rapports.html"
+                                        title="Reports">Reports</a>
+                                    <a class="dropdown-item vendre" href="Publications/flash_info.html"
+                                        title="Newsflash">Newsflash</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Gallery"
+                                    href="galerie.html" title="Gallery">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html" title="Contact">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div><!-- ./bottomnav -->
+    </header><!-- Fin Header-->
+
+    <main>
+        <div class="container">
+            <div class="row flex-md-row flex-column-reverse">
+                <div class="col-md-3 my-4  d-md-block d-none">
+                    <div class="espaceLinks ">
+                        <div class="espaceLinks">
+                            <h2 class="text-center text-primary">Our Spaces :</h2>
+                            <a href="Espace/Clients_particulier/clients_particuliers.html"> <img src="../images/Lien - En/Clients-pg.JPG.jpg" alt="Image Espace Client Particulier"
+                                    title="Individual Customer Area" class="d-block w-100 mb-1 espace">
+                            </a>
+                            <a href="Espace/Grand_compte/grands_comptes.html"> <img src="../images/Lien - En/Grands-Comptes-PG.jpg" alt="Image Espace Grands Comptes"
+                                    title="Key Accounts area" class="d-block w-100 mb-1 espace">
+                            </a>
+                            <a href="Espace/RH/RH.html"> <img src="../images/Lien - En/RH-PG.JPG.jpg" alt="Image Espace RH" title="RH Area"
+                                    class="d-block w-100 mb-1 espace">
+                            </a>
+                            <a href="Espace/Fournisseurs/fournisseurs.html"> <img src="../images/Lien - En/Fournisseurs-PG.JPG.jpg" alt="Image Espace Fournisseurs"
+                                    title="Suppliers area" class="d-block w-100 mb-1 espace">
+                            </a>
+                            <a href="Espace/Developpement_durable/developpement_durable.html"> <img src="../images/Lien - En/DD-PG.JPG.jpg" alt="Image Developpement Durable"
+                                    title="Sustainable development" class="d-block w-100 mb-1 espace">
+                            </a>
+                        </div>
+                        <div class="numTel">
+                            <img src="../images/telImg.png" alt="Image Centre de relation client RADEEMA"
+                                title="RADEEMA Customer Relations Center" draggable="false"
+                                class="d-block w-100 mb-1 espace">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-9">
+                    <div id="carousel1" class="carousel slide position-relative" data-ride="carousel"
+                        data-interval="2000">
+                        <div class="overlay-slider position-absolute w-100"></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel1" data-slide-to="1"></li>
+                            <li data-target="#carousel1" data-slide-to="2"></li>
+                            <li data-target="#carousel1" data-slide-to="3"></li>
+                            <a id="playButton"><i class="fa fa-play-circle bg-primary ml-1" aria-hidden="true"></i></a>
+                            <a id="pauseButton"><i class="fa fa-pause-circle bg-primary ml-1"
+                                    aria-hidden="true"></i></a>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 " src="../images/WEB SLIDE e-invest.JPG.jpg"
+                                    alt="First slide">
+                            </div>
+                            <div class="carousel-item ">
+                                <img class="d-block w-100 " src="../images/WEB SLIDE agence virtuelle.JPG.jpg"
+                                    alt="Second slide">
+                            </div>
+                            <div class="carousel-item ">
+                                <img class="d-block w-100 " src="../images/WEB SLIDE porte-ouverte-fr.JPG.jpg"
+                                    alt="Four slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 " src="../images/WEB SLIDE radeema mob.JPG.jpg"
+                                    alt="Five slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                            <span class="text-light bg-primary rounded p-2  rounded p-2 shadow" aria-hidden="true"><i
+                                    class="fa fa-arrow-left" aria-hidden="true"></i></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                            <span class=" text-light bg-primary rounded p-2  rounded p-2 shadow" aria-hidden="true"><i
+                                    class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 my-4 pr-md-0">
+                        <div class="invest">
+                            <a href="#" title="PROMOTERS AND INVESTORS AREA"
+                                alt="L'ESPACE PROMOTEURS ET INVESTISSEURS"><img src="../images/e-Invest.png"
+                                    class="img-fluid w-100" alt="e-invest"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 mt-4 pl-md-0">
+                        <form class="validate-form form-login connect">
+                            <div class="content">
+                                <div class="container">
+                                    <div class="row">
+
+                                        <div class="col-md-12">
+                                            <div class="wrap-input validate-input mt-3"
+                                                data-validate="The email field is required">
+                                                <input class="input text-light" autocomplete="off" type="text"
+                                                    name="username" placeholder="Enter your email">
+                                                <span class="focus-input" data-symbol="&#xf007;"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="wrap-input validate-input my-2"
+                                                data-validate="The password field is required">
+                                                <input class="input text-light" autocomplete="off" type="password"
+                                                    name="pass" placeholder="Enter your password">
+                                                <span class="focus-input" data-symbol="&#xf13e;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="#" class="mt-2 mr-4">Forgot your password!</a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="float-md-right">
+                                                <a href="#">Create your space</a>
+                                                |
+                                                <a href="https://www.fatourati.ma/FatLite/ma/Radeema/formulaire?cid=01&fid=1010" target="_blank">Pay your bills</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="submit" name="login"
+                                                class="btn btn-primary py-1 px-4 mt-2 mx-auto d-block" id="btnLogin"
+                                                value="Connect">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="my-4">
+                            <h3 class="text-primary border-bottom-mainColor text-center py-2">Our agencies </h3>
+                            <label for="listeLocation" class="font-weight-bold">Choose an agency :</label>
+                            <select name="listeLocation" id="listeLocation" class="form-control mb-3"
+                                onchange="allerA();">
+                                <option value="-" hidden>-- Select a RADEEMA --</option>
+                                <option value="31.627554|-8.014912">RADEEMA, Guiliz Boulevard Mohamed VI, Marrakech
+                                </option>
+                                <option value="31.639546|-8.002967">RADEEMA, Avenue Yacoub El Mansour, Marrakech
+                                </option>
+                                <option value="31.650152|-7.997531">Radeema, شارع فلسطين, Marrakech</option>
+                                <option value="31.663865|-8.002814">Radeema Al Nojoom, Marrakech</option>
+                                <option value="31.628599|-8.060726">RADEEMA Massira, Marrakech</option>
+                                <option value="31.645123|-7.978322">RADEEMA Zouhour Ain Itti, Marrakech</option>
+                                <option value="31.594585|-8.029643">RADEEMA M'hamid, Marrakech</option>
+                                <option value="31.619348|-7.987341">RADEEMA Arset Lmaach, Marrakech</option>
+                                <option value="31.617783|-8.052540">RADEEMA Azli, Marrakech</option>
+                                <option value="31.634795|-7.980047">RADEEMA AL Housna, Marrakech</option>
+                                <option value="31.650152|-7.997537">RADEEMA Daoudiate, Marrakech</option>
+                                <option value="31.613858|-7.971785">RADEEMA Sidi Youssef Ben Ali, Marrakech</option>
+                                <option value="31.639356|-7.983931">RADEEMA Bab Kechich, Marrakech</option>
+                            </select>
+                            <!--<iframe
+                                src="https://calendar.google.com/calendar/embed?src=oussama.dld.dev%40gmail.com&ctz=Africa%2FCasablanca"
+                                class="w-100 calenderFrame" frameborder="0" scrolling="no"></iframe>-->
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-4 border-left border-primary">
+                        <h3 class="text-primary border-bottom-mainColor text-center py-2">Ours Agenda :</h3>
+                        <div id='calendar'></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class=" mt-4">
+                            <h3 class="text-primary border-bottom-mainColor text-center py-2">News</h3>
+                            <div id="carousel2"
+                                class="carousel slide actualiteSlider position-relative border border-light"
+                                data-ride="carousel" data-interval="2000">
+                                <div class="overlay-slider position-absolute w-100"></div>
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel2" data-slide-to="1"></li>
+                                    <li data-target="#carousel2" data-slide-to="2"></li>
+                                    <li data-target="#carousel2" data-slide-to="3"></li>
+                                    <li data-target="#carousel2" data-slide-to="4"></li>
+                                    <li data-target="#carousel2" data-slide-to="5"></li>
+                                    <li data-target="#carousel2" data-slide-to="6"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100 backgroundImg" src="../images/blankImage.png" alt="">
+                                        <div class="slide-content ml-2 position-absolute pl-3">
+                                            <div class="slider-image float-left mr-3">
+                                                <a href="Actualités/actualite1.html"><img
+                                                        src="../images/actualite/article1.jpg" class="rounded"
+                                                        alt="RADEEMA Image"
+                                                        title="RADEEMA maintains the accreditation of its analysis laboratory potable water according to ISO / IEC 17025"></a>
+                                            </div>
+                                            <div class="slider-text">
+                                                <div class="overflow-hidden p">
+                                                    <h5>RADEEMA maintains the accreditation of its analysis laboratory
+                                                        potable water according to ISO / IEC 17025</h5>
+                                                    <p>Five years after obtaining ISO 17025: 2005 accreditation, by the
+                                                        Ministry of Industry, Trade, Investment and Digital Economy, for
+                                                        the activities of its drinking water analysis laboratory ,
+                                                        RADEEMA once again reaffirms its commitment by maintaining this
+                                                        distinction for another round of accreditation.
+                                                    </p>
+                                                </div>
+                                                <a href="Actualités/actualite1.html">Show more ...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100 backgroundImg" src="../images/blankImage.png" alt="">
+                                        <div class="slide-content ml-2 position-absolute pl-3">
+                                            <div class="slider-image float-left mr-3">
+                                                <a href="Actualités/actualite2.html"><img
+                                                        src="../images/actualite/article2.jpg" class="rounded"
+                                                        alt="RADEEMA Image"
+                                                        title="RADEEMA has maintained its triple for the 6th consecutive year certification"></a>
+                                            </div>
+                                            <div class="slider-text">
+                                                <div class="overflow-hidden p">
+                                                    <h5>RADEEMA has maintained its triple for the 6th consecutive year
+                                                        certification</h5>
+                                                    <p>Triple certified since 2013 by the IMANOR certification body for
+                                                        electricity distribution, drinking water and liquid sanitation
+                                                        management on all of its sites ... Triple certified since 2013
+                                                        by the certification body IMANOR For the distribution of
+                                                        electricity, drinking water and the management of liquid
+                                                        sanitation on all of its sites, RADEEMA has invested daily in
+                                                        testing
+                                                    </p>
+                                                </div>
+                                                <a href="Actualités/actualite2.html">Show more ...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <img class="d-block w-100 backgroundImg" src="../images/blankImage.png" alt="">
+                                        <div class="slide-content ml-2 position-absolute pl-3">
+                                            <div class="slider-image float-left mr-3">
+                                                <a href="Actualités/actualite3.html"><img
+                                                        src="../images/actualite/article3.jpg" class="rounded"
+                                                        alt="RADEEMA Image"
+                                                        title="RADEEMA - CIMAT, a new stage in the process of treatment and recovery of sewage sludge from Marrakech"></a>
+                                            </div>
+                                            <div class="slider-text">
+                                                <div class="overflow-hidden p">
+                                                    <h5>RADEEMA - CIMAT</h5>
+                                                    <p>RADEEMA and CIMAT signed a memorandum of understanding for the
+                                                        recovery of dried sewage sludge as fuel for substitution in the
+                                                        cement manufacturing industry, 15 thousand tonnes of dried
+                                                        sludge will be transported annually to the cement kilns, making
+                                                        this waste a alternative energy source.</p>
+                                                </div>
+                                                <a href="Actualités/actualite3.html">Show more ...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100 backgroundImg" src="../images/blankImage.png" alt="">
+                                        <div class="slide-content ml-2 position-absolute pl-3">
+                                            <div class="slider-image float-left mr-3">
+                                                <a href="Actualités/actualite4.html"><img
+                                                        src="../images/actualite/article4.jpg" class="rounded"
+                                                        alt="RADEEMA Image" title="RADEEMA Day for Blood Donors"></a>
+                                            </div>
+                                            <div class="slider-text">
+                                                <div class="overflow-hidden p">
+                                                    <h5>RADEEMA Day for Blood Donors</h5>
+                                                    <p>As part of its continued openness to its environment social, and
+                                                        as part of its involvement in the success of all humanitarian
+                                                        and social initiatives, The Autonomous Water and Electricity
+                                                        Management Marrakech opened its doors on Thursday July 19, 2019
+                                                        at the headquarters located on the boulevard Mohammed VI,
+                                                        organizing a blood donation day and thus greatly contributing to
+                                                        the enrichment of the Reserve Regional of this vital substance.
+                                                    </p>
+                                                </div>
+                                                <a href="Actualités/actualite4.html">Show more ...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100 backgroundImg" src="../images/blankImage.png" alt="">
+                                        <div class="slide-content ml-2 position-absolute pl-3">
+                                            <div class="slider-image float-left mr-3">
+                                                <a href="Actualités/actualite5.html"><img
+                                                        src="../images/actualite/article5.jpg" alt="RADEEMA Image"
+                                                        class="rounded"
+                                                        title="RADEEMA launches the 8th edition 'Satchel for all'"></a>
+                                            </div>
+                                            <div class="slider-text">
+                                                <div class="overflow-hidden p">
+                                                    <h5>RADEEMA launches the 8th edition "Satchel for all"</h5>
+                                                    <p>The Autonomous Water and Electricity Management Marrakech
+                                                        launched, Tuesday, September 24, the distribution of a pack 800
+                                                        school bags and school supplies for 800 schoolchildren in
+                                                        disadvantaged areas of the ocher city. Schools targeted by this
+                                                        initiative are: Abdel Wahed Marrakchi school, Mohamed school
+                                                        Bakkal, Abdallah Ben Yassin school, Al Wahda school, Al school
+                                                        Msalla, Sidi Youssef Ben Ali school, Soukaina school, Chouhadaa
+                                                        school, Al Inbiath school and Oumnia Bent Wahab school. Interim
+                                                        CEO Salaheddine Mountassir declared, through this eighth edition
+                                                        Schoolbag for all, organized in collaboration with the
+                                                        Management Provincial of
+                                                    </p>
+                                                </div>
+                                                <a href="Actualités/actualite5.html">Show more ...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item ">
+                                        <img class="d-block w-100 backgroundImg" src="../images/blankImage.png" alt="">
+                                        <div class="slide-content ml-2 position-absolute pl-3">
+                                            <div class="slider-image float-left mr-3">
+                                                <a href="Actualités/actualite6.html"><img
+                                                        src="../images/actualite/article6.jpg" class="rounded"
+                                                        alt="RADEEMA Image"
+                                                        title="elebration of World Data Protection Day"></a>
+                                            </div>
+                                            <div class="slider-text">
+                                                <div class="overflow-hidden p">
+                                                    <h5>Celebration of World Data Protection Day
+                                                    </h5>
+                                                    <p>As part of the continuity of its actions in terms of internal
+                                                        communication and on the occasion of World Day Data Protection,
+                                                        RADEEMA organized on January 28 2020 a conference for its
+                                                        employees under the theme: PROTECTION OF PERSONAL DATA: What
+                                                        challenges conformity for RADEEMA?</p>
+                                                </div>
+                                                <a href="Actualités/actualite6.html">Show more ...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100 backgroundImg" src="../images/blankImage.png" alt="">
+                                        <div class="slide-content ml-2 position-absolute pl-3">
+                                            <div class="slider-image float-left mr-3">
+                                                <a href="Actualités/actualite7.html"><img
+                                                        src="../images/actualite/article7.jpg" class="rounded"
+                                                        alt="RADEEMA Image"
+                                                        title="Participation of RADEEMA in the communication meeting around the drinking water supply program."></a>
+                                            </div>
+                                            <div class="slider-text">
+                                                <div class="overflow-hidden p">
+                                                    <h5>Participation of RADEEMA </h5>
+                                                    <p>Participation of RADEEMA in the communication meeting around the
+                                                        drinking water supply program.</p>
+                                                </div>
+                                                <a href="Actualités/actualite7.html">Show more ...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                                    <span class="text-light bg-dark rounded p-2  rounded p-1 shadow"
+                                        aria-hidden="true"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                                    <span class=" text-light bg-dark rounded p-2  rounded p-1 shadow"
+                                        aria-hidden="true"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="border-top-mainColor pl-2 pt-4">
+                            <h4><i class="fa fa-angle-double-right yellowColor"></i> Our jobs</h4>
+                            <ul class="list-unstyled ml-2">
+                                <li><a href="Metiers/eau_portable.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Drinking water</a></li>
+                                <li><a href="Metiers/electricite.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Electricity</a></li>
+                                <li><a href="Metiers/assainissement_liquide.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Liquid sanitation</a></li>
+                                <li><a href="Metiers/developpement_commercial.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Business Development</a></li>
+                                <li><a href="Metiers/step.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> STEP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="border-top-mainColor pl-2 pt-4">
+                            <h4><i class="fa fa-angle-double-right yellowColor"></i> Useful links</h4>
+                            <ul class="list-unstyled ml-2">
+                                <li><a href="Espace/Clients_particulier/demande_abonnement.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Subscription request</a></li>
+                                <li><a href="Espace/Clients_particulier/demande_branchement.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Connection request</a></li>
+                                <li><a href="Espace/Fournisseurs/offre_service.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Service offers</a></li>
+                                <li><a href="Espace/Fournisseurs/appel_offre.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Tenders </a></li>
+                                <li><a href="Espace/Fournisseurs/resultat_offre.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Tender results</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="border-top-mainColor pl-2 pt-4">
+                            <h4><i class="fa fa-angle-double-right yellowColor"></i> Know us</h4>
+                            <ul class="list-unstyled ml-2">
+                                <li><a href="Espace/Clients_particulier/FAQ.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> FAQ</a></li>
+                                <li><a href="contact.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Contact us</a></li>
+                                <li><a href="galerie.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Gallery</a></li>
+                                <li><a href="#" class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Legal Notice</a></li>
+                                <li><a href="plan de site.html"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-caret-right text-dark"></i> Site plan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="border-top-mainColor pl-2 pt-4">
+                            <h4><i class="fa fa-angle-double-right yellowColor"></i> Follow us</h4>
+                            <ul class="list-unstyled ml-2">
+                                <li><a href="https://fr-fr.facebook.com/RADEEMAKECH/" target="_blank"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-facebook text-dark mr-2"></i> Facebook</a></li>
+                                <li><a href="https://twitter.com/radeemakech" target="_blank"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-twitter text-dark mr-1"></i> Twitter</a></li>
+                                <li><a href="https://play.google.com/store/apps/details?id=ma.radeema.redaelouafi.RadeemaMob"
+                                        target="_blank"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-android text-dark mr-1"></i> Mobile app</a></li>
+                                <li><a href="https://www.youtube.com/channel/UCFl5dUovd_Wr1AT0aprFAJA" target="_blank"
+                                        class="text-decoration-none text-secondary font-weight-bold ml-md-3"><i
+                                            class="fa fa-youtube text-dark mr-1"></i> Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <div class="text-center py-2">
+
+                            <p class="text-decoration-none text-dark font-weight-bold mb-0 py-2">&copy; All rights
+                                RADEEMA - DOULADI 2020 Reserved </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed-Espace">
+        <div class="liens">
+            <i class="fa fa-window-close-o fermerEspaces d-block text-center" title="Close" aria-hidden="true"></i>
+            <a href="Espace/Clients_particulier/clients_particuliers.html"> <img src="../images/Lien - En/Clients-pg.JPG.jpg"
+                    alt="Image Espace client" title="Client area" class="d-block">
+            </a>
+            <a href="Espace/Grand_compte/grands_comptes.html"> <img src="../images/Lien - En/Grands-Comptes-PG.jpg"
+                    alt="Image Espace Grands Comptes" title="Key Accounts area" class="d-block">
+            </a>
+            <a href="Espace/Fournisseurs/fournisseurs.html"> <img src="../images/Lien - En/Fournisseurs-PG.JPG.jpg"
+                    alt="Image Espace Fournisseurs" title="Suppliers area" class="d-block">
+            </a>
+            <a href="Espace/RH/RH.html"> <img src="../images/Lien - En/RH-PG.JPG.jpg" alt="Image Espace RH" class="d-block">
+            </a>
+            <a href="Espace/Developpement_durable/developpement_durable.html"> <img src="../images/Lien - En/DD-PG.JPG.jpg"
+                    alt="Image Espace Developpement Durable" title="Sustainable Development Area" class="d-block">
+            </a>
+        </div>
+    </div>
+    <!-- scrollTop -->
+    <div class="scrollTop border border-bottom-0">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+    <!-- JavaScript -->
+    <script src='../js/vendors/core/main.min.js'></script>
+    <script src='../js/vendors/daygrid/main.min.js'></script>
+    <script src='../js/vendors/google-calendar/main.min.js'></script>
+    <script src="../js/vendors/jquery-3.3.1.min.js"></script>
+    <script src="../js/vendors/popper.min.js"></script>
+    <script src="../js/vendors/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM86MHMYMNRgDcgHl3KxZLWl6HGEty7AQ&callback=initMap"
+        async defer></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

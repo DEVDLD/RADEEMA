@@ -1,0 +1,87 @@
+* {
+    text-align: right;
+}
+
+body {
+    direction: rtl;
+
+    header {
+        .dropdown-menu {
+            right: 0;
+            left: auto;
+        }
+
+        .dropdown-toggle::after {
+            margin-right: 0.5em;
+        }
+
+        .navbar {
+            .navbar-brand {
+                font-size: 2rem !important;
+            }
+
+            a:not(.logo) {
+                font-size: 1.2em !important;
+            }
+        }
+    }
+
+    main {
+        /*------------ Login Form ---------------------------------*/
+        .input {
+            padding: 0 43px 8px 7px;
+        }
+
+        .focus-input {
+            right: 0;
+            left: auto;
+
+            &::after {
+                right: 0;
+                left: auto;
+                padding-right: 13px;
+            }
+
+            &::before {
+                right: 0;
+            }
+        }
+
+        .alert-validate {
+            &::before {
+                padding: 4px 10px 4px 25px;
+                left: 2px;
+                right: auto;
+                text-align: right;
+            }
+
+            &::after {
+                left: 8px;
+                right: auto;
+            }
+        }
+    }
+
+    footer {}
+
+    //Fixed Espaces
+    .fixed-Espace {
+        left: -132px;
+        right: auto;
+        transition: left .5s ease-in-out;
+
+        &:hover {
+            left: 0;
+            right: auto;
+        }
+    }
+
+    //icon font awsome
+    .iconLink{
+        &::after {
+            content: '\f100';
+            margin-right: 10px;
+            margin-left: auto;
+        }
+    }
+}

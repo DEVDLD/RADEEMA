@@ -1,0 +1,131 @@
+
+  /*------------------------------------------------------------------
+  [Background]*/
+  .connect{
+        background-size: cover;
+        background-image: url(../images/accueil-background.jpeg);
+        padding-top: 100px;
+        height: 300px;
+    }
+  /*[ Input ]*/
+  .form-login{
+      input::placeholder{
+          color: #fff;
+      }
+  }
+  .wrap-input {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #d9d9d9;
+  }
+  
+  .input {
+    font-size: 16px;
+    color: #333333;
+    border:0;
+    outline: 0;
+    display: block;
+    width: 100%;
+    background: transparent;
+    padding: 0 7px 8px 43px;
+    &:focus + .focus-input::before {
+      width: 100%;
+    }
+
+    &:focus + .focus-input::after {
+      color: #777;
+    }
+  }
+  
+  
+  /*---------------------------------------------*/
+  .focus-input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    border-radius: 0;
+    &::after {
+      content: attr(data-symbol);
+      font-family: "FontAwesome";
+      color: #fff;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      height: calc(100% - 20px);
+      bottom: 15px;
+      left: 0;
+      padding-left: 13px;
+      padding-top: 3px;
+      transition: all 0.2s;
+      
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #777;
+      transition: all 0.4s;
+      z-index: 99;
+    }
+  }
+
+  /*------------------------------------------------------------------
+  [ Alert validate ]*/
+  
+  .validate-input {
+    position: relative;
+  } 
+
+  .alert-validate{
+    &::before {
+      content: attr(data-validate);
+      position: absolute;
+      max-width: 80%;
+      background-color: #fff;
+      border: 1px solid #c80000;
+      border-radius: 2px;
+      padding: 4px 25px 4px 10px;
+      bottom: 5px;
+      right: 2px;
+      pointer-events: none;
+      color: #c80000;
+      font-size: 13px;
+      line-height: 1.4;
+      text-align: left;
+      transition: opacity 0.4s;
+    }
+    &::after {
+      content: "\f06a";
+      font-family: FontAwesome;
+      display: block;
+      position: absolute;
+      color: #c80000;
+      font-size: 16px;
+      top: 0px;
+      right: 8px;
+    }
+    &:hover:before {
+      visibility: visible;
+      opacity: 1;
+    }
+
+  }
+  
+  select{
+    padding-top: 2px !important;
+    background-color: #f8f8f8 !important;
+  }
+  
+  
+  
+ 

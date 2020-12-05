@@ -1,0 +1,25 @@
+
+
+//Prefixer
+@mixin prefixer($property,$value,$prefixes:()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix +'-'+$property}:$value;
+    }
+    #{$property}:$value;
+}
+
+//Animation
+@mixin KeyFrame($nom-animation) {
+    @-webkit-keyframes #{$nom-animation}{
+        @content;
+    }
+    @-moz-keyframes #{$nom-animation}{
+        @content;
+    }
+    @-o-keyframes #{$nom-animation}{
+        @content;
+    }
+    @keyframes #{$nom-animation}{
+        @content;
+    }
+}

@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    @include prefixer(box-sizing,border-box,webkit moz o);    
+    //Slider Principal
+    .carousel{
+        &:not(.actualiteSlider) img{
+            height: 81vh;
+            @media(max-width:767px){
+                height: 300px;
+            }
+        }
+        .carousel-indicators{
+            //bullet
+            li{
+                border-radius: 50%;
+                width: 15px !important;
+                height: 15px !important;
+            }
+            //pause and play buttons
+            #playButton i,#pauseButton i{
+                color: #fff;
+                margin-top: 5px;
+                font-size: 20px;
+                border-radius: 50%;
+                padding: 2px;
+                cursor: pointer;
+            }
+            #playButton{
+              display: none;
+            }
+        } 
+        .overlay-slider{
+            bottom: 0; 
+            left: 0;
+            height: 20%;
+            z-index: 5;
+            background-image: linear-gradient(to top, #212121, transparent);
+        }
+    }
+    
+   .invest{
+    height: 300px;
+        img{
+            height: 300px;
+        }
+   }
+    
+    
+    
+    //map
+    #map {
+        height: 400px;
+      }
+    
+    //calendrie
+    .fc{
+        .fc-button-primary:not(.fc-today-button){
+            color: #fff;
+            background-color: $mainColor !important;
+            border-color: #2C3E50;
+        }
+        .fc-toolbar h2 {
+            font-size: 1.75em;
+            margin: 0;
+            color: $mainColor;
+        }
+        
+    }
+    .fc-unthemed td.fc-today {
+        background: $secondColor !important;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.3rem;
+        padding-right: 2%;
+    }
+    //Slider actualite
+    .actualiteSlider{
+        width: 100%;
+        .backgroundImg{
+            height: 350px;
+            @media(max-width:767px){
+                height: 200px;
+            }
+        }
+        .slide-content{
+            width: 80%;
+            left: 50%;
+            top: 25%;
+            transform: translate(-50%,-25%);
+            .overflow-hidden.p{
+                height: 200px;
+                text-overflow: ellipsis;
+                @media (max-width:767px) {
+                        height: 105px;
+                        h5,p{
+                            font-size: .8em;
+                            line-height: 1;
+                        }
+                }
+            }
+            .slider-image img{
+                width: 270px ;
+                height: 240px;
+                @media(max-width:767px){
+                    width: 120px ;
+                    height: 129px;
+                }
+            }
+            
+        }
+        .carousel-indicators{
+            margin-bottom: 1%;
+        }
+    }
+        
+}

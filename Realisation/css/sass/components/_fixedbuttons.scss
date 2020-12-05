@@ -1,0 +1,58 @@
+//ButtonScroll Top
+.scrollTop {
+    position: fixed;
+    bottom: 37px;
+    right: 15px;
+    background: $mainColor;
+    border-radius: 20%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    opacity: .5;
+    z-index: 999;
+    line-height: 40px;
+    transition: opacity .3s;
+    text-align: center;
+    cursor: pointer; 
+    display: none;
+    &:hover{
+        opacity: 1;
+    }
+}
+//Fixed Espaces
+.fixed-Espace{
+    position: fixed;
+    right: -132px;
+    z-index: 9999;
+    display: none;
+    top: 50%;
+    transition: right .5s ease-in-out;
+    transform: translateY(-50%);
+    cursor: pointer;
+    .liens img{
+        opacity: .9;
+        width: 200px;
+        margin-top: 2%;
+        height: 50px; 
+        &:hover{
+            opacity: 1;
+            box-shadow: 5px 1px 10px 0px #000;
+        }
+    }
+    .fermerEspaces:hover{
+        color: $secondColor;
+    }
+    &:hover{
+        right: 0;
+    }
+}
+
+//espace links 
+.espace{
+    opacity: .9;
+    &:hover{
+        opacity: 1;
+        box-shadow: 5px 1px 10px 0px #aaa;
+        
+    }
+}
