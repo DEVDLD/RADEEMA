@@ -128,7 +128,7 @@ function initMap(latitude, longitude, placeName) {
 			position: { lat: latitude, lng: longitude },
 			map: map,
 			//icon: 'images/pin.png'
-			icon: 'D:\\Projet Radeema\\Realisation\\images\\pin.png'
+			icon: 'https://devdld.github.io/RADEEMA/Realisation/images/pin.png'
 
 		});
 		var infoWindow = new google.maps.InfoWindow({
@@ -168,7 +168,7 @@ function addMarker(coords, placeName) {
 		position: coords,
 		map: map,
 		//icon: 'images/pin.png'
-		icon: 'D:\\Projet Radeema\\Realisation\\images\\pin.png'
+		icon: 'https://devdld.github.io/RADEEMA/Realisation/images/pin.png'
 
 	});
 	var infoWindow = new google.maps.InfoWindow({

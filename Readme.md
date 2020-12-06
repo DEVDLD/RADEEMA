@@ -1,7 +1,4 @@
----
-# Projet Refonte d'un site web multilingue RADEEMA 
-- [Consulter ma refonte online](https://www.linkedin.com/in/douladi-oussama/)
----
+# [Projet Refonte d'un site web multilingue RADEEMA ](https://devdld.github.io/RADEEMA/)
 
 **Les téchnologies utilisés :**
 
